@@ -1,0 +1,67 @@
+<script>
+    if (window.location.pathname.includes('slider.html')) {
+        window.location.href = '../index.html';
+    }
+</script>
+<!-- Main Banner Slider -->
+<main id="banner-slider">
+    <div id="slides-container">
+        <!-- Slide 0 -->
+        <div class="slide active" data-index="0">
+            <img src="https://picsum.photos/seed/uniqlo-lw/1920/1080" alt="Bộ Sưu Tập LifeWear Hè 2026" referrerpolicy="no-referrer">
+            <div class="slide-content animate-in">
+                <div class="slide-badge-wrap">
+                    <span class="slide-badge-main">LifeWear</span>
+                    <span class="slide-badge-sub">COLLECTION</span>
+                </div>
+                <h1 class="slide-title">Bộ Sưu Tập LifeWear Hè 2026</h1>
+                <p class="slide-desc">Màu sắc mới, Kiểu dáng mới – Làm mới phong cách của bạn với bộ sưu tập Hè mới nhất từ UNIQLO.</p>
+            </div>
+        </div>
+        <!-- Slide 1 -->
+        <div class="slide" data-index="1">
+            <img src="https://picsum.photos/seed/uniqlo-air/1920/1080" alt="Công Nghệ AIRism Mới Nhất" referrerpolicy="no-referrer">
+            <div class="slide-content">
+                <div class="slide-badge-wrap">
+                    <span class="slide-badge-main">AIRism</span>
+                    <span class="slide-badge-sub">NEW ARRIVAL</span>
+                </div>
+                <h1 class="slide-title">Công Nghệ AIRism Mới Nhất</h1>
+                <p class="slide-desc">Thoáng mát, nhẹ nhàng – Trải nghiệm sự khác biệt với dòng AIRism cải tiến từ UNIQLO.</p>
+            </div>
+        </div>
+        <!-- Slide 2 -->
+        <div class="slide" data-index="2">
+            <img src="https://picsum.photos/seed/uniqlo-mk/1920/1080" alt="UNIQLO x MARIMEKKO" referrerpolicy="no-referrer">
+            <div class="slide-content">
+                <div class="slide-badge-wrap">
+                    <span class="slide-badge-main">UNIQLO</span>
+                    <span class="slide-badge-sub">LIMITED EDITION</span>
+                </div>
+                <h1 class="slide-title">UNIQLO x MARIMEKKO</h1>
+                <p class="slide-desc">Sự kết hợp hoàn hảo giữa họa tiết rực rỡ của Marimekko và phong cách tối giản của UNIQLO.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dots + Play/Pause (bên phải dọc) -->
+    <div id="slider-controls">
+        <div id="dots-container">
+            <button class="dot-btn" data-index="0"><div class="dot active"></div></button>
+            <button class="dot-btn" data-index="1"><div class="dot"></div></button>
+            <button class="dot-btn" data-index="2"><div class="dot"></div></button>
+        </div>
+        <button id="play-pause" aria-label="Play/Pause">
+            <svg id="pause-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none">
+                <rect x="6" y="4" width="4" height="16" fill="white"/>
+                <rect x="14" y="4" width="4" height="16" fill="white"/>
+            </svg>
+            <svg id="play-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" style="display:none;">
+                <path d="M8 5v14l11-7z" fill="white"/>
+            </svg>
+        </button>
+    </div>
+
+    <!-- Slide number -->
+    <div id="slide-number">01 / 03</div>
+</main>

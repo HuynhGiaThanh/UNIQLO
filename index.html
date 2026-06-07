@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNIQLO Clone Interface</title>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Global Styles -->
+    <link rel="stylesheet" href="shared/global.css">
+    <!-- Component Styles -->
+    <link rel="stylesheet" href="promobar/promobar.css">
+    <link rel="stylesheet" href="header/header.css">
+    <link rel="stylesheet" href="menu/menu.css">
+    <link rel="stylesheet" href="search/search.css">
+    <link rel="stylesheet" href="slider/slider.css">
+    <link rel="stylesheet" href="category/category.css">
+    <!-- Component JS (load trước để các hàm init sẵn sàng) -->
+    <script src="shared/global.js"></script>
+    <script src="promobar/promobar.js"></script>
+    <script src="header/header.js"></script>
+    <script src="menu/menu.js"></script>
+    <script src="search/search.js"></script>
+    <script src="slider/slider.js"></script>
+    <script src="category/category.js"></script>
+</head>
+<body>
+
+    <div id="promo-bar-container"></div>
+    <div id="backdrop-container"></div>
+    <div id="header-container"></div>
+    <div id="mega-menu-container"></div>
+    <div id="search-container"></div>
+    <div id="banner-slider-container"></div>
+    <div id="category-container" style="display: none;"></div>
+
+    <script>
+        $(document).ready(function() {
+            // Load HTML components
+            var loaded = 0;
+            var total = 7;
+
+            function onLoaded() {
+                loaded++;
+                if (loaded === total) {
+                    // Tất cả HTML đã load xong, khởi tạo
+                    initGlobal();
+                    initPromoBar();
+                    initHeader();
+                    initMegaMenu();
+                    initSearch();
+                    initBannerSlider();
+                    initCategory();
+                }
+            }
+
+            $('#promo-bar-container').load('promobar/promobar.html', onLoaded);
+            $('#backdrop-container').load('shared/backdrop.html', onLoaded);
+            $('#header-container').load('header/header.html', onLoaded);
+            $('#mega-menu-container').load('menu/menu.html', onLoaded);
+            $('#search-container').load('search/search.html', onLoaded);
+            $('#banner-slider-container').load('slider/slider.html', onLoaded);
+            $('#category-container').load('category/category.html', onLoaded);
+        });
+    </script>
+</body>
+</html>

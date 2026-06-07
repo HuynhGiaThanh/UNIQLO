@@ -1,0 +1,153 @@
+/* ===== SEARCH OVERLAY ===== */
+#search-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 120;
+    background: white;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+    padding-bottom: 48px;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease;
+}
+
+.search-inner {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* Top row */
+.search-top {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    height: 64px;
+    margin-bottom: 16px;
+}
+
+.search-back,
+.search-close-btn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    flex-shrink: 0;
+    transition: background 0.2s ease;
+}
+
+.search-back:hover,
+.search-close-btn:hover {
+    background: #f3f4f6;
+}
+
+.search-input-wrap {
+    flex: 1;
+}
+
+.search-input-wrap input {
+    width: 100%;
+    border: 1.5px solid #2563eb;
+    border-radius: 999px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-family: inherit;
+    outline: none;
+    font-weight: 500;
+}
+
+.search-input-wrap input:focus {
+    box-shadow: 0 0 0 2px rgba(37,99,235,0.2);
+}
+
+/* Links */
+.search-links {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 40px;
+    margin-left: 56px;
+}
+
+.search-link-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    transition: text-decoration 0.1s;
+}
+
+.search-link-btn:hover {
+    text-decoration: underline;
+}
+
+/* Divider */
+.search-divider {
+    height: 1px;
+    background: #f3f4f6;
+    margin-bottom: 32px;
+}
+
+/* Popular */
+.search-popular h3 {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+#popular-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 40px;
+}
+
+.popular-tag {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #e5e7eb;
+    border-radius: 999px;
+    padding: 8px 20px;
+    font-size: 12px;
+    font-weight: 500;
+    transition: border-color 0.2s ease;
+    cursor: pointer;
+}
+
+.popular-tag:hover {
+    border-color: #9ca3af;
+}
+
+/* History */
+.search-history-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.search-history-header h3 {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.search-history-header button {
+    color: #9ca3af;
+    display: flex;
+    align-items: center;
+    transition: color 0.2s ease;
+}
+
+.search-history-header button:hover {
+    color: #1b1b1b;
+}
+
+.search-history p {
+    font-size: 12px;
+    color: #9ca3af;
+}

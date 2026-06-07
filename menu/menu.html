@@ -1,0 +1,338 @@
+<script>
+    if (window.location.pathname.includes('menu.html')) {
+        window.location.href = '../index.html';
+    }
+</script>
+<!-- Mega Menu -->
+<div id="mega-menu">
+    <div class="menu-inner">
+
+        <!-- Search bar trong menu -->
+        <div class="menu-search-bar">
+            <span class="menu-search-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#999" stroke-width="1.5" stroke-linecap="round">
+                    <circle cx="10.5" cy="10.5" r="6.5"></circle>
+                    <line x1="15.5" y1="15.5" x2="21" y2="21"></line>
+                </svg>
+            </span>
+            <input type="text" placeholder="Bạn đang tìm sản phẩm gì?" class="menu-search-input">
+        </div>
+
+        <!-- Category grids for different groups -->
+        <div id="category-grid">
+            <!-- NỮ CATEGORIES -->
+            <div id="category-grid-NU" class="category-grid-content">
+                <a href="#cat-ao-khoac" class="category-item" data-cat="ao-khoac">
+                    <div class="category-icon-emoji">🧥</div>
+                    <span class="category-name">ÁO KHOÁC</span>
+                </a>
+                <a href="#cat-ao-thun" class="category-item" data-cat="ao-thun">
+                    <div class="category-icon-emoji">👕</div>
+                    <span class="category-name">ÁO THUN, ÁO NỈ & ÁO BRA TOP</span>
+                </a>
+                <a href="#cat-ao-len" class="category-item" data-cat="ao-len">
+                    <div class="category-icon-emoji">🧶</div>
+                    <span class="category-name">ÁO LEN & ÁO DỆT KIM</span>
+                </a>
+                <a href="#cat-ao-so-mi" class="category-item" data-cat="ao-so-mi">
+                    <div class="category-icon-emoji">👚</div>
+                    <span class="category-name">ÁO SƠ MI & ÁO KIỂU</span>
+                </a>
+                <a href="#cat-quan" class="category-item" data-cat="quan">
+                    <div class="category-icon-emoji">👖</div>
+                    <span class="category-name">QUẦN</span>
+                </a>
+                <a href="#cat-chan-vay" class="category-item" data-cat="chan-vay">
+                    <div class="category-icon-emoji">👗</div>
+                    <span class="category-name">CHÂN VÁY & ĐẦM</span>
+                </a>
+                <a href="#cat-sport" class="category-item" data-cat="sport">
+                    <div class="category-icon-emoji">🏃</div>
+                    <span class="category-name">SPORT UTILITY WEAR</span>
+                </a>
+                <a href="#cat-airism" class="category-item" data-cat="airism">
+                    <div class="category-icon-emoji">💨</div>
+                    <span class="category-name">AIRism</span>
+                </a>
+                <a href="#cat-heattech" class="category-item" data-cat="heattech">
+                    <div class="category-icon-emoji">🔥</div>
+                    <span class="category-name">HEATTECH</span>
+                </a>
+                <a href="#cat-innerwear" class="category-item" data-cat="innerwear">
+                    <div class="category-icon-emoji">👙</div>
+                    <span class="category-name">ĐỒ MẶC TRONG & ĐỒ LÓT</span>
+                </a>
+                <a href="#cat-loungewear" class="category-item" data-cat="loungewear">
+                    <div class="category-icon-emoji">🏠</div>
+                    <span class="category-name">ĐỒ MẶC NHÀ</span>
+                </a>
+                <a href="#cat-phu-kien" class="category-item" data-cat="phu-kien">
+                    <div class="category-icon-emoji">👜</div>
+                    <span class="category-name">PHỤ KIỆN</span>
+                </a>
+                <a href="#cat-do-bau" class="category-item" data-cat="do-bau">
+                    <div class="category-icon-emoji">🤰</div>
+                    <span class="category-name">ĐỒ BẦU</span>
+                </a>
+                <a href="#cat-chong-nang" class="category-item" data-cat="chong-nang">
+                    <div class="category-icon-emoji">☀️</div>
+                    <span class="category-name">SẢN PHẨM CHỐNG TIA UV</span>
+                </a>
+            </div>
+
+            <!-- NAM CATEGORIES -->
+            <div id="category-grid-NAM" class="category-grid-content" style="display: none;">
+                <a href="#cat-ao-khoac" class="category-item" data-cat="ao-khoac">
+                    <div class="category-icon-emoji">🧥</div>
+                    <span class="category-name">ÁO KHOÁC</span>
+                </a>
+                <a href="#cat-ao-thun" class="category-item" data-cat="ao-thun">
+                    <div class="category-icon-emoji">👕</div>
+                    <span class="category-name">ÁO THUN & ÁO NỈ</span>
+                </a>
+                <a href="#cat-ao-len" class="category-item" data-cat="ao-len">
+                    <div class="category-icon-emoji">🧶</div>
+                    <span class="category-name">ÁO LEN & ÁO DỆT KIM</span>
+                </a>
+                <a href="#cat-ao-so-mi" class="category-item" data-cat="ao-so-mi">
+                    <div class="category-icon-emoji">👔</div>
+                    <span class="category-name">ÁO SƠ MI & ÁO POLO</span>
+                </a>
+                <a href="#cat-quan" class="category-item" data-cat="quan">
+                    <div class="category-icon-emoji">👖</div>
+                    <span class="category-name">QUẦN</span>
+                </a>
+                <a href="#cat-sport" class="category-item" data-cat="sport">
+                    <div class="category-icon-emoji">🏃</div>
+                    <span class="category-name">SPORT UTILITY WEAR</span>
+                </a>
+                <a href="#cat-airism" class="category-item" data-cat="airism">
+                    <div class="category-icon-emoji">💨</div>
+                    <span class="category-name">AIRism</span>
+                </a>
+                <a href="#cat-heattech" class="category-item" data-cat="heattech">
+                    <div class="category-icon-emoji">🔥</div>
+                    <span class="category-name">HEATTECH</span>
+                </a>
+                <a href="#cat-innerwear" class="category-item" data-cat="innerwear">
+                    <div class="category-icon-emoji">🩲</div>
+                    <span class="category-name">ĐỒ MẶC TRONG & ĐỒ LÓT</span>
+                </a>
+                <a href="#cat-loungewear" class="category-item" data-cat="loungewear">
+                    <div class="category-icon-emoji">🏠</div>
+                    <span class="category-name">ĐỒ MẶC NHÀ</span>
+                </a>
+                <a href="#cat-phu-kien" class="category-item" data-cat="phu-kien">
+                    <div class="category-icon-emoji">🎒</div>
+                    <span class="category-name">PHỤ KIỆN</span>
+                </a>
+                <a href="#cat-chong-nang" class="category-item" data-cat="chong-nang">
+                    <div class="category-icon-emoji">☀️</div>
+                    <span class="category-name">SẢN PHẨM CHỐNG TIA UV</span>
+                </a>
+            </div>
+
+            <!-- TRẺ EM CATEGORIES -->
+            <div id="category-grid-TRE_EM" class="category-grid-content" style="display: none;">
+                <a href="#cat-ao-khoac" class="category-item" data-cat="ao-khoac">
+                    <div class="category-icon-emoji">🧥</div>
+                    <span class="category-name">ÁO KHOÁC</span>
+                </a>
+                <a href="#cat-ao-thun" class="category-item" data-cat="ao-thun">
+                    <div class="category-icon-emoji">👕</div>
+                    <span class="category-name">ÁO THUN & ÁO NỈ</span>
+                </a>
+                <a href="#cat-quan" class="category-item" data-cat="quan">
+                    <div class="category-icon-emoji">👖</div>
+                    <span class="category-name">QUẦN</span>
+                </a>
+                <a href="#cat-chan-vay" class="category-item" data-cat="chan-vay">
+                    <div class="category-icon-emoji">👗</div>
+                    <span class="category-name">ĐẦM & CHÂN VÁY</span>
+                </a>
+                <a href="#cat-sport" class="category-item" data-cat="sport">
+                    <div class="category-icon-emoji">🏃</div>
+                    <span class="category-name">SPORT UTILITY WEAR</span>
+                </a>
+                <a href="#cat-airism" class="category-item" data-cat="airism">
+                    <div class="category-icon-emoji">💨</div>
+                    <span class="category-name">AIRism</span>
+                </a>
+                <a href="#cat-heattech" class="category-item" data-cat="heattech">
+                    <div class="category-icon-emoji">🔥</div>
+                    <span class="category-name">HEATTECH</span>
+                </a>
+                <a href="#cat-innerwear" class="category-item" data-cat="innerwear">
+                    <div class="category-icon-emoji">🩲</div>
+                    <span class="category-name">ĐỒ MẶC TRONG & ĐỒ LÓT</span>
+                </a>
+                <a href="#cat-loungewear" class="category-item" data-cat="loungewear">
+                    <div class="category-icon-emoji">🏠</div>
+                    <span class="category-name">ĐỒ MẶC NHÀ</span>
+                </a>
+                <a href="#cat-phu-kien" class="category-item" data-cat="phu-kien">
+                    <div class="category-icon-emoji">🎒</div>
+                    <span class="category-name">PHỤ KIỆN</span>
+                </a>
+            </div>
+
+            <!-- EM BÉ CATEGORIES -->
+            <div id="category-grid-EM_BE" class="category-grid-content" style="display: none;">
+                <a href="#cat-ao-thun" class="category-item" data-cat="ao-thun">
+                    <div class="category-icon-emoji">👶</div>
+                    <span class="category-name">EM BÉ (0-24 THÁNG)</span>
+                </a>
+                <a href="#cat-quan" class="category-item" data-cat="quan">
+                    <div class="category-icon-emoji">🧸</div>
+                    <span class="category-name">EM BÉ (6 THÁNG - 5 TUỔI)</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="menu-divider"></div>
+
+        <!-- Sections -->
+        <div class="menu-sections">
+
+            <section class="menu-section">
+                <h3>Thông Báo</h3>
+                <div class="menu-notices">
+                    <a href="#" class="menu-notice-link">Vui lòng đọc và tuân thủ Điều khoản và Điều kiện khi đặt hàng trực tuyến. Tìm hiểu thêm</a>
+                    <a href="#" class="menu-notice-link">Hệ thống đã được nâng cấp để mang đến trải nghiệm tốt hơn cho bạn. Tìm hiểu thêm</a>
+                </div>
+            </section>
+
+            <section class="menu-section">
+                <h3>LifeWear</h3>
+                <div class="menu-grid-5" id="lifewear-items">
+                    <div class="lifewear-item">
+                        <img src="https://picsum.photos/seed/lw1/300/225" alt="Bộ Sưu Tập LifeWear Hè 2026" referrerpolicy="no-referrer">
+                        <h4>Bộ Sưu Tập LifeWear Hè 2026</h4>
+                        <p>Phong cách mới cho mùa hè.</p>
+                    </div>
+                    <div class="lifewear-item">
+                        <img src="https://picsum.photos/seed/lw2/300/225" alt="Áo Phông LifeWear Xuân Hè 2026" referrerpolicy="no-referrer">
+                        <h4>Áo Phông LifeWear Xuân Hè 2026</h4>
+                        <p>Chất liệu thoáng mát, dễ phối.</p>
+                    </div>
+                    <div class="lifewear-item">
+                        <img src="https://picsum.photos/seed/lw3/300/225" alt="UNIQLO Masterpiece" referrerpolicy="no-referrer">
+                        <h4>UNIQLO Masterpiece</h4>
+                        <p>Những thiết kế kinh điển.</p>
+                    </div>
+                    <div class="lifewear-item">
+                        <img src="https://picsum.photos/seed/lw4/300/225" alt="What Makes Life Better?" referrerpolicy="no-referrer">
+                        <h4>What Makes Life Better?</h4>
+                        <p>Triết lý LifeWear của UNIQLO.</p>
+                    </div>
+                    <div class="lifewear-item">
+                        <img src="https://picsum.photos/seed/lw5/300/225" alt="UT Magazine" referrerpolicy="no-referrer">
+                        <h4>UT Magazine</h4>
+                        <p>Thời trang đường phố sáng tạo.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="menu-section">
+                <h3>Gợi Ý Mỗi Tuần</h3>
+                <div class="menu-grid-4" id="weekly-recs">
+                    <div class="weekly-item">
+                        <img src="https://picsum.photos/seed/rec1/300/225" alt="Bộ Sưu Tập Linen" referrerpolicy="no-referrer">
+                        <h4>Bộ Sưu Tập Linen</h4>
+                        <p>Khám phá phong cách mới nhất.</p>
+                    </div>
+                    <div class="weekly-item">
+                        <img src="https://picsum.photos/seed/rec2/300/225" alt="AIRism Cotton" referrerpolicy="no-referrer">
+                        <h4>AIRism Cotton</h4>
+                        <p>Khám phá phong cách mới nhất.</p>
+                    </div>
+                    <div class="weekly-item">
+                        <img src="https://picsum.photos/seed/rec3/300/225" alt="Áo Thun Mùa Hè" referrerpolicy="no-referrer">
+                        <h4>Áo Thun Mùa Hè</h4>
+                        <p>Khám phá phong cách mới nhất.</p>
+                    </div>
+                    <div class="weekly-item">
+                        <img src="https://picsum.photos/seed/rec4/300/225" alt="Quần Shorts" referrerpolicy="no-referrer">
+                        <h4>Quần Shorts</h4>
+                        <p>Khám phá phong cách mới nhất.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="menu-section">
+                <h3>Bộ Sưu Tập Đặc Biệt</h3>
+                <div class="menu-grid-4" id="special-collections">
+                    <div class="collection-item">
+                        <img src="https://picsum.photos/seed/sc1/300/225" alt="UNIQLO and JW ANDERSON" referrerpolicy="no-referrer">
+                        <h4>UNIQLO and JW ANDERSON</h4>
+                    </div>
+                    <div class="collection-item">
+                        <img src="https://picsum.photos/seed/sc2/300/225" alt="UNIQLO : C" referrerpolicy="no-referrer">
+                        <h4>UNIQLO : C</h4>
+                    </div>
+                    <div class="collection-item">
+                        <img src="https://picsum.photos/seed/sc3/300/225" alt="UNIQLO and COMPTOIR DES COTONNIERS" referrerpolicy="no-referrer">
+                        <h4>UNIQLO and COMPTOIR DES COTONNIERS</h4>
+                    </div>
+                    <div class="collection-item">
+                        <img src="https://picsum.photos/seed/sc4/300/225" alt="Uniqlo U" referrerpolicy="no-referrer">
+                        <h4>Uniqlo U</h4>
+                    </div>
+                </div>
+            </section>
+
+            <section class="menu-section">
+                <h3 class="menu-section-center">Tiện Ích Từ Ứng Dụng</h3>
+                <div class="menu-grid-5" id="app-utils">
+                    <div class="app-util-item">
+                        <div class="app-util-icon">💳</div>
+                        <h4>WELCOME COUPON</h4>
+                        <p>Tải ứng dụng và đăng ký tài khoản ngay để nhận MÃ GIẢM GIÁ 100.000VNĐ.</p>
+                    </div>
+                    <div class="app-util-item">
+                        <div class="app-util-icon">🚚</div>
+                        <h4>MIỄN PHÍ GIAO HÀNG</h4>
+                        <p>Miễn phí giao hàng cho mọi đơn hàng online nhận tại cửa hàng.</p>
+                    </div>
+                    <div class="app-util-item">
+                        <div class="app-util-icon">📦</div>
+                        <h4>CLICK & COLLECT</h4>
+                        <p>Mua sắm trực tuyến bất cứ khi nào và nhận đơn hàng của bạn.</p>
+                    </div>
+                    <div class="app-util-item">
+                        <div class="app-util-icon">📱</div>
+                        <h4>EXTRA SIZE</h4>
+                        <p>Thêm các lựa chọn kích cỡ phù hợp nhất với bạn, từ XS đến XXL.</p>
+                    </div>
+                    <div class="app-util-item">
+                        <div class="app-util-icon">✂️</div>
+                        <h4>DỊCH VỤ LÊN LAI QUẦN</h4>
+                        <p>Trải nghiệm dịch vụ lên lai quần trực tuyến và nhận hàng ngay.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="menu-section">
+                <h3>Thông Tin Cửa Hàng</h3>
+                <div class="menu-grid-3" id="store-info">
+                    <div class="menu-card">
+                        <img src="https://picsum.photos/seed/shop1/600/350" alt="Ha Noi">
+                        <h4>Hệ thống cửa hàng UNIQLO Hà Nội</h4>
+                        <p>Trải nghiệm không gian mua sắm hiện đại.</p>
+                    </div>
+                    <div class="menu-card">
+                        <img src="https://picsum.photos/seed/shop2/600/350" alt="HCM">
+                        <h4>Hệ thống cửa hàng UNIQLO TP. Hồ Chí Minh</h4>
+                        <p>Trải nghiệm không gian mua sắm hiện đại.</p>
+                    </div>
+                    <div class="menu-card">
+                        <img src="https://picsum.photos/seed/shop3/600/350" alt="Da Nang">
+                        <h4>Hệ thống cửa hàng UNIQLO Đà Nẵng</h4>
+                        <p>Trải nghiệm không gian mua sắm hiện đại.</p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+</div>

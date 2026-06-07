@@ -1,0 +1,86 @@
+/* ===== GLOBAL STYLES ===== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap');
+
+:root {
+    /* UNIQLO Colors */
+    --color-primary: #ff0000;
+    
+    /* Grayscale System */
+    --color-white: #ffffff;
+    --color-gray-100: #f4f4f4; /* Backgrounds, Hover */
+    --color-gray-200: #e5e5e5; /* Borders, Dividers */
+    --color-gray-300: #cccccc; /* Disabled */
+    --color-gray-500: #767676; /* Secondary Text, Icons */
+    --color-gray-900: #1b1b1b; /* Primary Text, Headers */
+    --color-black: #000000;
+
+    /* Typography */
+    --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    
+    /* Font Sizes */
+    --text-xs: 12px;
+    --text-sm: 14px;
+    --text-base: 16px;
+    --text-lg: 18px;
+    --text-xl: 20px;
+    --text-2xl: 24px;
+    --text-3xl: 32px;
+    
+    /* Font Weights */
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semibold: 600;
+    --font-bold: 700;
+    --font-black: 900;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-primary);
+    background: var(--color-white);
+    color: var(--color-gray-900);
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    color: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* Backdrop */
+#backdrop {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 90;
+}
+
+/* Main content area */
+#main-content {
+    position: relative;
+    min-height: 100vh;
+}

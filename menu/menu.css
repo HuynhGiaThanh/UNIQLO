@@ -1,0 +1,277 @@
+/* ===== MEGA MENU ===== */
+#mega-menu {
+    display: none;
+    position: fixed;
+    /* Bắt đầu ngay dưới header (promo 40px + header 46px = 86px) */
+    top: 86px;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    background: white;
+    max-height: calc(100vh - 86px);
+    overflow-y: auto;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    -ms-overflow-style: none;
+    scrollbar-width: thin;
+}
+#mega-menu::-webkit-scrollbar { width: 4px; }
+#mega-menu::-webkit-scrollbar-thumb { background: #ddd; }
+
+.menu-inner {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 32px 24px 64px;
+}
+
+/* ── Search bar ── */
+.menu-search-bar {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 999px;
+    padding: 9px 18px;
+    margin-bottom: 24px;
+    gap: 10px;
+    background: white;
+}
+
+.menu-search-icon {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.menu-search-icon svg {
+    width: 15px;
+    height: 15px;
+}
+
+.menu-search-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 13px;
+    font-family: inherit;
+    color: #1b1b1b;
+    background: transparent;
+}
+
+.menu-search-input::placeholder {
+    color: #aaa;
+    font-size: 13px;
+}
+
+/* ── Category grid ── */
+#category-grid {
+    margin-bottom: 32px;
+}
+
+.category-grid-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4px;
+}
+
+.category-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    padding: 10px 8px;
+    border: 1px solid #e8e8e8;
+    background: white;
+    transition: background 0.15s ease;
+}
+
+.category-item:hover {
+    background: #f8f8f8;
+}
+
+.category-item:hover .category-name {
+    text-decoration: underline;
+}
+
+.category-icon-emoji {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    flex-shrink: 0;
+}
+
+.category-name {
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 1.35;
+    color: #1b1b1b;
+}
+
+/* ── Divider ── */
+.menu-divider {
+    height: 1px;
+    background: #e5e5e5;
+    margin-bottom: 32px;
+}
+
+/* ── Sections ── */
+.menu-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.menu-section h3 {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: #1b1b1b;
+}
+
+.menu-section-center {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+/* Notices */
+.menu-notices {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.menu-notice-link {
+    font-size: 12px;
+    color: #0066cc;
+    text-decoration: none;
+    line-height: 1.5;
+}
+
+.menu-notice-link:hover {
+    text-decoration: underline;
+}
+
+/* Grids */
+.menu-grid-5 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+}
+
+.menu-grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.menu-grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    padding-bottom: 24px;
+}
+
+/* Cards */
+.menu-card {
+    cursor: pointer;
+}
+
+.menu-card:hover h4 {
+    text-decoration: underline;
+}
+
+.menu-card img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.menu-card h4 {
+    font-size: 11px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    line-height: 1.3;
+    color: #1b1b1b;
+}
+
+.menu-card p {
+    font-size: 10px;
+    color: #666;
+    line-height: 1.4;
+}
+
+/* App utils */
+.app-util-item {
+    text-align: center;
+    cursor: pointer;
+}
+
+.app-util-item:hover h4 {
+    text-decoration: underline;
+}
+
+.app-util-icon {
+    font-size: 28px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: center;
+}
+
+.app-util-item h4 {
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+    letter-spacing: -0.01em;
+    line-height: 1.3;
+}
+
+.app-util-item p {
+    font-size: 9px;
+    color: #666;
+    line-height: 1.4;
+}
+
+/* Weekly / LifeWear items */
+.weekly-item,
+.lifewear-item,
+.collection-item {
+    cursor: pointer;
+}
+
+.weekly-item:hover h4,
+.lifewear-item:hover h4,
+.collection-item:hover h4 {
+    text-decoration: underline;
+}
+
+.weekly-item img,
+.lifewear-item img,
+.collection-item img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.weekly-item h4,
+.lifewear-item h4,
+.collection-item h4 {
+    font-size: 11px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    line-height: 1.3;
+}
+
+.weekly-item p,
+.lifewear-item p,
+.collection-item p {
+    font-size: 10px;
+    color: #666;
+    line-height: 1.4;
+}

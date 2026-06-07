@@ -1,0 +1,105 @@
+<script>
+    if (window.location.pathname.includes('search.html')) {
+        window.location.href = '../index.html';
+    }
+</script>
+<!-- Search Overlay -->
+<div id="search-overlay">
+    <div class="search-inner">
+
+        <div class="search-top">
+            <button class="close-search search-back" aria-label="Quay lại">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M14.567 19.5 8.5 12l6.067-7.5.933.85L10.138 12l5.362 6.65z"/>
+                </svg>
+            </button>
+            <div class="search-input-wrap">
+                <input type="text" id="search-input" placeholder="Bạn đang tìm sản phẩm gì?">
+            </div>
+            <button class="close-search search-close-btn" aria-label="Đóng">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="m17.5 7.311-.81-.811L12 11.19 7.31 6.5l-.81.811 4.69 4.69L6.5 16.69l.81.81L12 12.812l4.69 4.69.81-.811L12.81 12z"/>
+                </svg>
+            </button>
+        </div>
+
+        <div class="search-links">
+            <button class="search-link-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M18.25 8.25h-2.5v2.5h2.5zM2.9 5.399v14.2h18.2V5.4zM16.45 18.4h-3.9v-4.352h3.9zm-5 0h-3.9v-4.352h3.9zm8.45 0h-2.35v-5.45H6.45v5.45H4.1V6.6h15.8z"/>
+                </svg>
+                <span>Cửa hàng</span>
+            </button>
+            <button class="search-link-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M16.5 9.9v1.2h3.9v6.3h-3v1.715L15.571 17.4h-4.47v-1.9H9.9v3.1h5.195l3.504 3.285V18.6h3V9.9zM4.9 16.2v-2.601H2.4V4.4h12.2v9.2H8.367zm-1.3-3.8h2.5v1.399L7.967 12.4H13.4V5.6H3.6z"/>
+                </svg>
+                <span>FAQ</span>
+            </button>
+        </div>
+
+        <div class="search-divider"></div>
+
+        <div class="search-popular">
+            <h3>Tìm kiếm phổ biến</h3>
+            <div id="popular-tags">
+                <button class="popular-tag">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24">
+                        <path fill="#9ca3af" d="m21 20.152-5.348-5.348a6.56 6.56 0 0 0 1.529-4.214A6.597 6.597 0 0 0 10.59 4 6.597 6.597 0 0 0 4 10.59a6.597 6.597 0 0 0 6.59 6.59 6.56 6.56 0 0 0 4.215-1.528L20.152 21zM5.2 10.59a5.4 5.4 0 0 1 5.391-5.392 5.4 5.4 0 0 1 5.392 5.392 5.4 5.4 0 0 1-5.392 5.392A5.4 5.4 0 0 1 5.2 10.59"/>
+                    </svg>
+                    <span>Quần Shorts</span>
+                </button>
+                <button class="popular-tag">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24">
+                        <path fill="#9ca3af" d="m21 20.152-5.348-5.348a6.56 6.56 0 0 0 1.529-4.214A6.597 6.597 0 0 0 10.59 4 6.597 6.597 0 0 0 4 10.59a6.597 6.597 0 0 0 6.59 6.59 6.56 6.56 0 0 0 4.215-1.528L20.152 21zM5.2 10.59a5.4 5.4 0 0 1 5.391-5.392 5.4 5.4 0 0 1 5.392 5.392 5.4 5.4 0 0 1-5.392 5.392A5.4 5.4 0 0 1 5.2 10.59"/>
+                    </svg>
+                    <span>Quần Culottes</span>
+                </button>
+                <button class="popular-tag">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24">
+                        <path fill="#9ca3af" d="m21 20.152-5.348-5.348a6.56 6.56 0 0 0 1.529-4.214A6.597 6.597 0 0 0 10.59 4 6.597 6.597 0 0 0 4 10.59a6.597 6.597 0 0 0 6.59 6.59 6.56 6.56 0 0 0 4.215-1.528L20.152 21zM5.2 10.59a5.4 5.4 0 0 1 5.391-5.392 5.4 5.4 0 0 1 5.392 5.392 5.4 5.4 0 0 1-5.392 5.392A5.4 5.4 0 0 1 5.2 10.59"/>
+                    </svg>
+                    <span>Áo Thun</span>
+                </button>
+                <button class="popular-tag">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24">
+                        <path fill="#9ca3af" d="m21 20.152-5.348-5.348a6.56 6.56 0 0 0 1.529-4.214A6.597 6.597 0 0 0 10.59 4 6.597 6.597 0 0 0 4 10.59a6.597 6.597 0 0 0 6.59 6.59 6.56 6.56 0 0 0 4.215-1.528L20.152 21zM5.2 10.59a5.4 5.4 0 0 1 5.391-5.392 5.4 5.4 0 0 1 5.392 5.392 5.4 5.4 0 0 1-5.392 5.392A5.4 5.4 0 0 1 5.2 10.59"/>
+                    </svg>
+                    <span>Sản phẩm Linen</span>
+                </button>
+                <button class="popular-tag">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24">
+                        <path fill="#9ca3af" d="m21 20.152-5.348-5.348a6.56 6.56 0 0 0 1.529-4.214A6.597 6.597 0 0 0 10.59 4 6.597 6.597 0 0 0 4 10.59a6.597 6.597 0 0 0 6.59 6.59 6.56 6.56 0 0 0 4.215-1.528L20.152 21zM5.2 10.59a5.4 5.4 0 0 1 5.391-5.392 5.4 5.4 0 0 1 5.392 5.392 5.4 5.4 0 0 1-5.392 5.392A5.4 5.4 0 0 1 5.2 10.59"/>
+                    </svg>
+                    <span>Chống tia UV</span>
+                </button>
+                <button class="popular-tag">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24">
+                        <path fill="#9ca3af" d="m21 20.152-5.348-5.348a6.56 6.56 0 0 0 1.529-4.214A6.597 6.597 0 0 0 10.59 4 6.597 6.597 0 0 0 4 10.59a6.597 6.597 0 0 0 6.59 6.59 6.56 6.56 0 0 0 4.215-1.528L20.152 21zM5.2 10.59a5.4 5.4 0 0 1 5.391-5.392 5.4 5.4 0 0 1 5.392 5.392 5.4 5.4 0 0 1-5.392 5.392A5.4 5.4 0 0 1 5.2 10.59"/>
+                    </svg>
+                    <span>Kính mắt chống UV</span>
+                </button>
+                <button class="popular-tag">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 24 24">
+                        <path fill="#9ca3af" d="m21 20.152-5.348-5.348a6.56 6.56 0 0 0 1.529-4.214A6.597 6.597 0 0 0 10.59 4 6.597 6.597 0 0 0 4 10.59a6.597 6.597 0 0 0 6.59 6.59 6.56 6.56 0 0 0 4.215-1.528L20.152 21zM5.2 10.59a5.4 5.4 0 0 1 5.391-5.392 5.4 5.4 0 0 1 5.392 5.392 5.4 5.4 0 0 1-5.392 5.392A5.4 5.4 0 0 1 5.2 10.59"/>
+                    </svg>
+                    <span>Ưu Đãi Thành Viên</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="search-history">
+            <div class="search-history-header">
+                <h3>Lịch sử tìm kiếm</h3>
+                <button aria-label="Xóa lịch sử">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M19.65 5.9h-6.3V4.342h-2.7v1.56h-6.3v1.2h1.549v12.499H18.1v-12.5h1.549zM7.1 7.102h9.8v11.3H7.1zM10.5 9.35h-1v7.15h1zm4 0h-1v7.15h1z"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="search-divider"></div>
+            <p>Bạn có thể xem lịch sử tìm kiếm tại đây.</p>
+        </div>
+
+    </div>
+</div>
